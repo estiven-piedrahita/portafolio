@@ -1,0 +1,427 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./fotos/fondo.avif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0;
+    margin: 0;
+    z-index: 1000;
+    background-color: rgb(43, 68, 70);
+    align-items: center;
+}
+.container-nav{ 
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.nav1 a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 1);
+    padding: 10px;
+    transition: all 0.3s ease; 
+}
+.nav1 a:hover{
+    border-radius: 6px;
+    box-shadow: 0 0 20px #fff8; 
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.presentacion{
+    align-items: center;
+    padding: 40px 20px;
+}
+.presentacion h1{
+    font-size: 45px; 
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    box-shadow: 0 0 15px black;
+    width: fit-content; 
+    margin: 20px auto 50px auto; 
+    margin-top: 130px;
+}
+.presentacion h1:hover{
+    border-radius: 6px;
+    box-shadow: 0 0 20px #fff8;
+}
+.presentacion h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    width: fit-content; 
+    margin: 20px auto 50px auto; 
+    box-shadow: 0 0 4px black;
+    padding: 4px;
+    margin-top: 130px;
+}
+.presentacion p{
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.proyectos1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.proyecto-indivudual {
+    background-color: rgba(26, 26, 26, 0.8);
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-indivudual:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2); 
+}
+
+.proyecto-indivudual h3 {
+    font-size: 22px;
+    color: #fff; 
+    text-transform: uppercase;
+
+}
+
+.proyecto-indivudual p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.enlace-proyecto {
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top:20px;
+}
+.laimagen{
+    justify-self: center;
+}
+.laimagen img{
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+    background-color: rgba(87, 83, 99, 0.445);
+    padding: 20px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    border: 2px solid gray;
+    box-shadow: 0 2px 13px gray;
+    margin-bottom: 40%;
+    margin-top: 20%;
+}
+.laimagen img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.mis-proyectos{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.mis-proyectos h2{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    width: fit-content; 
+    margin: 20px auto 50px auto; 
+    box-shadow: 0 0 4px black;
+    padding: 4px;
+}
+
+
+
+
+.titulo-mascotas h2{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    width: fit-content; 
+    margin: 20px auto 50px auto; 
+    box-shadow: 0 0 4px black;
+    padding: 4px;
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+
+.las-mascotas{
+    background-image: url(./fotos/fotoMascotas.webp);
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.las-mascotas:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2); 
+}
+.las-mascotas h3{
+    font-size: 22px;
+    color: #fff; 
+    text-transform: uppercase;
+}
+
+.contenedor-mascotas{
+    display: grid; 
+    gap: 30px; 
+    padding: 50px;
+    max-width: 400px;
+    margin: 0 auto; 
+}
+
+
+.galeria-mascotas {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px; 
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.tarjeta-mascota {
+    background-color: rgba(40, 40, 40, 0.8);
+    border: 1px solid #555;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; 
+    max-width: 350px; 
+}
+
+.tarjeta-mascota:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3); 
+}
+
+.tarjeta-mascota h3 {
+    font-size: 24px;
+    color: #ffd700; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.tarjeta-mascota img {
+    width: 100%;
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+/* estilo del footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 100px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.footer-content h3 {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-content p {
+    margin: 8px 0;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ffd700; 
+    text-decoration: underline;
+}
+.nav1 a.activo {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+
+@media (max-width: 768px) {
+    
+    .container-nav {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .nav1 {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .nav1 a {
+        font-size: 16px; 
+        margin: 0 5px;
+        padding: 8px 12px;
+    }
+    
+    
+    .presentacion {
+        padding: 30px 15px;
+        width: 100%;
+    }
+    
+    .presentacion h1 {
+        font-size: 32px; 
+        margin-top: 100px;
+        padding: 10px 15px;
+    }
+    
+    .presentacion h2 {
+        font-size: 24px; 
+        margin-top: 80px;
+        padding: 8px 15px;
+    }
+    
+    .presentacion p {
+        font-size: 16px;
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+    
+
+    .laimagen img {
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+        padding: 15px;
+    }
+    
+    .proyectos1 {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 30px 15px;
+    }
+    
+    .proyecto-indivudual {
+        padding: 20px;
+    }
+    
+    .proyecto-indivudual h3 {
+        font-size: 20px;
+    }
+    
+    .proyecto-indivudual p {
+        font-size: 15px;
+    }
+    
+    .mis-proyectos h2,
+    .titulo-mascotas h2 {
+        font-size: 26px;
+        padding: 8px 15px;
+    }
+    
+    .contenedor-mascotas {
+        padding: 30px 15px;
+        max-width: 100%;
+    }
+    
+    .las-mascotas {
+        padding: 30px 20px;
+    }
+    
+    .las-mascotas h3 {
+        font-size: 20px;
+    }
+    
+    .galeria-mascotas {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+    
+    .tarjeta-mascota {
+        max-width: 100%; 
+        padding: 20px;
+    }
+    
+    .tarjeta-mascota h3 {
+        font-size: 22px;
+    }
+    
+    .tarjeta-mascota img {
+        max-height: 250px;
+    }
+    
+    /* FOOTER */
+    footer {
+        padding: 25px 15px;
+        margin-top: 60px;
+    }
+    
+    .footer-content h3 {
+        font-size: 22px;
+    }
+    
+    .footer-content {
+        font-size: 14px;
+    }
+    
+    .footer-content p {
+        margin: 6px 0;
+    }
+}
